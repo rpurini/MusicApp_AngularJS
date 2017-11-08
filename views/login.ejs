@@ -1,0 +1,50 @@
+<!doctype>
+
+<html>
+<head>
+  <title>Raj Music || User Login</title>
+  
+    <link href="../../css/styles.css" rel="stylesheet" />
+    <link href="../../css/bootstrap.css" rel="stylesheet" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+     <link href="../../js/bootstrap.min.js" rel="stylesheet" />
+     <script src="../../js/jquery-3.2.1.js"></script>
+     
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Raj Music World</a>
+    </div>
+</div>
+</nav>
+
+<form class="form-vertical" method="POST", action="/users/login">
+  <fieldset>
+    <legend>User Login</legend>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputEmail" name="email" required placeholder="Email" type="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputPassword" name="password" required placeholder="Password" type="password">  <br>   
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Reset</button>
+        <button type="submit" class="btn btn-primary">Submit</button> &nbsp Or <a class="btn btn-link" href="!#signup">Sign Up</a>
+      </div>
+    </div>
+  </fieldset>
+</form>
